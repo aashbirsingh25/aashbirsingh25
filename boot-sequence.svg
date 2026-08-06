@@ -1,0 +1,71 @@
+<svg width="860" height="300" viewBox="0 0 860 300" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Consolas, Menlo, monospace">
+  <defs>
+    <style>
+      .bg { fill: #0a0e14; }
+      .chrome { fill: #11161f; }
+      .dot { r: 5; }
+      .prompt { fill: #39bae6; font-size: 15px; }
+      .cmd { fill: #e6e1cf; font-size: 15px; }
+      .svc { fill: #ffb454; font-size: 14.5px; }
+      .desc { fill: #8a9199; font-size: 14.5px; }
+      .ok { fill: #7fd962; font-size: 14.5px; }
+      .title { fill: #565b66; font-size: 12px; letter-spacing: 0.5px; }
+      .line { opacity: 0; }
+    </style>
+    <clipPath id="clipTitle"><rect x="0" y="0" width="0" height="20"><animate attributeName="width" from="0" to="220" begin="0.1s" dur="0.5s" fill="freeze" calcMode="linear"/></rect></clipPath>
+    <clipPath id="clip1"><rect x="0" y="12" width="0" height="24"><animate attributeName="width" from="0" to="700" begin="0.7s" dur="0.45s" fill="freeze" calcMode="linear"/></rect></clipPath>
+    <clipPath id="clip2"><rect x="0" y="50" width="0" height="24"><animate attributeName="width" from="0" to="760" begin="1.35s" dur="0.55s" fill="freeze" calcMode="linear"/></rect></clipPath>
+    <clipPath id="clip3"><rect x="0" y="82" width="0" height="24"><animate attributeName="width" from="0" to="700" begin="2.15s" dur="0.45s" fill="freeze" calcMode="linear"/></rect></clipPath>
+    <clipPath id="clip4"><rect x="0" y="112" width="0" height="24"><animate attributeName="width" from="0" to="740" begin="2.75s" dur="0.5s" fill="freeze" calcMode="linear"/></rect></clipPath>
+    <clipPath id="clip5"><rect x="0" y="142" width="0" height="24"><animate attributeName="width" from="0" to="720" begin="3.4s" dur="0.5s" fill="freeze" calcMode="linear"/></rect></clipPath>
+  </defs>
+
+  <rect class="bg" width="860" height="300" rx="10"/>
+  <rect class="chrome" width="860" height="34" rx="10"/>
+  <rect class="chrome" x="0" y="20" width="860" height="14"/>
+  <circle class="dot" cx="22" cy="17" fill="#f26d78"/>
+  <circle class="dot" cx="40" cy="17" fill="#ffb454"/>
+  <circle class="dot" cx="58" cy="17" fill="#7fd962"/>
+  <g clip-path="url(#clipTitle)"><text x="360" y="22" class="title" text-anchor="middle">aashbir@github — zsh</text></g>
+
+  <g transform="translate(30,70)">
+    <g class="line" style="opacity:1">
+      <text x="0" y="0" class="prompt">$</text>
+      <text x="18" y="0" class="cmd">whoami</text>
+    </g>
+    <g clip-path="url(#clip1)">
+      <text x="0" y="28" class="desc">aashbir singh — software engineer · ai systems · full stack</text>
+    </g>
+
+    <g clip-path="url(#clip2)">
+      <text x="0" y="66" class="prompt">$</text>
+      <text x="18" y="66" class="cmd">systemctl status agent-stack.target</text>
+    </g>
+
+    <g clip-path="url(#clip3)">
+      <text x="0" y="98" class="ok">●</text>
+      <text x="18" y="98" class="svc">codeforge-ai.service</text>
+      <text x="230" y="98" class="desc">active — autonomous ReAct agent · FastAPI + React</text>
+    </g>
+
+    <g clip-path="url(#clip4)">
+      <text x="0" y="128" class="ok">●</text>
+      <text x="18" y="128" class="svc">querysphere.service</text>
+      <text x="230" y="128" class="desc">active — RAG platform · FAISS + Gemini retrieval</text>
+    </g>
+
+    <g clip-path="url(#clip5)">
+      <text x="0" y="158" class="ok">●</text>
+      <text x="18" y="158" class="svc">ridetrack.service</text>
+      <text x="230" y="158" class="desc">active — event-driven dispatch microservices</text>
+    </g>
+
+    <g style="opacity:0">
+      <animate attributeName="opacity" from="0" to="1" begin="3.9s" dur="0.2s" fill="freeze"/>
+      <text x="0" y="190" class="prompt">$</text>
+      <rect x="16" y="177" width="9" height="16" fill="#e6e1cf">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" begin="4.1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+</svg>
