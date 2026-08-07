@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=79C0FF&center=true&vCenter=true&width=500&height=50&lines=Hey%2C+I%27m+Aashbir;Full-stack+dev+%2F+AI+agent+builder" alt="Hey, I'm Aashbir" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=79C0FF&center=true&vCenter=true&width=600&lines=Building+AI+agents+%26+RAG+systems;Full-stack+dev+(FastAPI+%2B+React);Shipping+over+demoing" alt="typing" />
 
 <br>
 
