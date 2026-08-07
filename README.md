@@ -1,20 +1,18 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+Aashbir+Singh;Full+Stack+%2B+AI%2FML+Engineer;B.E.+CS+(AI%2FML)+%C2%B7+Class+of+2026;Building+agentic+%26+RAG+systems" alt="Typing SVG" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,50:8B5CF6,100:EC4899&height=200&section=header&text=Aashbir%20Singh&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full%20Stack%20%2B%20AI%2FML%20Engineer%20%C2%B7%20B.E.%20CS%20(AI%2FML)%20%C2%B7%20Class%20of%202026&descAlignY=55&descSize=18&descColor=ffffff" width="100%" />
 
-<br>
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-aashbirsingh-8B5CF6?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aashbirsingh)
-[![GitHub](https://img.shields.io/badge/GitHub-aashbirsingh25-6366F1?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aashbirsingh25)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-aashbirsingh-EC4899?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aashbirsingh)
+[![GitHub](https://img.shields.io/badge/GitHub-aashbirsingh25-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aashbirsingh25)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=aashbirsingh25&color=8B5CF6&style=for-the-badge&label=PROFILE+VIEWS)
-![Followers](https://img.shields.io/github/followers/aashbirsingh25?style=for-the-badge&color=6366F1&labelColor=0a0e14)
+![Followers](https://img.shields.io/github/followers/aashbirsingh25?style=for-the-badge&color=EC4899&labelColor=1a1a2e)
 
 </div>
 
 <br>
 
-## About Me
+## 👋 About Me
 
 - 🎓 B.E. in Computer Science with a specialization in AI/ML, graduated **2026**
 - 💻 Focus on **full-stack development** and **AI/ML systems** — LLM agents, RAG pipelines, event-driven backends
@@ -24,35 +22,23 @@
 
 <br>
 
-## Tech Stack
+## 💻 Tech Stack
 
 <div align="center">
 
-**Languages**
-<br>
-![Python](https://skillicons.dev/icons?i=py) ![TypeScript](https://skillicons.dev/icons?i=ts) ![JavaScript](https://skillicons.dev/icons?i=js)
+![Skills](https://skillicons.dev/icons?i=py,ts,js,react,html,css,fastapi,nodejs,postgres,git,githubactions,vercel,vscode&perline=13)
 
-**Frontend**
 <br>
-![React](https://skillicons.dev/icons?i=react) ![MUI](https://img.shields.io/badge/MUI-007FFF?style=flat-square&logo=mui&logoColor=white) ![HTML](https://skillicons.dev/icons?i=html) ![CSS](https://skillicons.dev/icons?i=css)
 
-**Backend & Data**
-<br>
-![FastAPI](https://skillicons.dev/icons?i=fastapi) ![Nodejs](https://skillicons.dev/icons?i=nodejs) ![PostgreSQL](https://skillicons.dev/icons?i=postgres)
-
-**AI / ML**
-<br>
-![Gemini](https://img.shields.io/badge/Gemini-8B5CF6?style=flat-square&logo=googlegemini&logoColor=white) ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white) ![FAISS](https://img.shields.io/badge/FAISS-6366F1?style=flat-square)
-
-**Cloud & Tools**
-<br>
-![Git](https://skillicons.dev/icons?i=git) ![GitHub Actions](https://skillicons.dev/icons?i=githubactions) ![Vercel](https://skillicons.dev/icons?i=vercel) ![VSCode](https://skillicons.dev/icons?i=vscode)
+![Gemini](https://img.shields.io/badge/Gemini-8B5CF6?style=for-the-badge&logo=googlegemini&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-4F46E5?style=for-the-badge&logo=openai&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-EC4899?style=for-the-badge)
 
 </div>
 
 <br>
 
-## Featured Projects
+## 🚀 Featured Projects
 
 <table>
 <tr>
@@ -88,26 +74,28 @@ Real-time delivery and dispatch tracking system built on **event-driven microser
 
 <br>
 
-## GitHub Stats
+## 📊 GitHub Analytics
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=aashbirsingh25&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0e14&title_color=8B5CF6&icon_color=6366F1&text_color=e6e1cf" width="49%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aashbirsingh25&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0e14&title_color=8B5CF6&text_color=e6e1cf" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api?username=aashbirsingh25&show_icons=true&theme=radical&hide_border=true&bg_color=1a1a2e&title_color=8B5CF6&icon_color=EC4899&text_color=e6e1cf" width="48%" />
+<img src="https://streak-stats.demolab.com?user=aashbirsingh25&hide_border=true&background=1A1A2E&ring=EC4899&fire=8B5CF6&currStreakLabel=8B5CF6&sideLabels=EC4899" width="48%" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aashbirsingh25&layout=compact&theme=radical&hide_border=true&bg_color=1a1a2e&title_color=8B5CF6&text_color=e6e1cf" width="45%" />
 
 </div>
 
 <br>
 
-## Connect With Me
+## 🌐 Let's Connect
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/Let's_Connect-LinkedIn-8B5CF6?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aashbirsingh)
-[![GitHub](https://img.shields.io/badge/Check_out_my_code-GitHub-6366F1?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aashbirsingh25)
-
-<br>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-8B5CF6?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aashbirsingh)
+[![GitHub](https://img.shields.io/badge/GitHub-EC4899?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aashbirsingh25)
 
 *Open to full-time opportunities — let's build something.*
 
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:EC4899,50:8B5CF6,100:4F46E5&height=100&section=footer" width="100%" />
