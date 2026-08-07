@@ -26,15 +26,13 @@ jobs:
           if [ -f scripts/requirements.txt ]; then pip install -r scripts/requirements.txt; fi
 
       - name: Fetch contributions and render heatmap SVG
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          python scripts/fetch_contributions.py
           python scripts/render_heatmap_svg.py
 
       - name: Commit and push updated SVG
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add contrib-heatmap.svg
+          git add contrib-heatmap.svg data/contributions.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "auto: update profile contribution heatmap [skip ci]" && git push)

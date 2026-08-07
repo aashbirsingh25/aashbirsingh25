@@ -1,16 +1,38 @@
+import json
 import os
 import sys
 
 # Ensure scripts directory is in python path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from fetch_contributions import fetch_contributions
+from fetch_contributions import derive_stats, fetch_days
+
+
+def get_color(count):
+    if count == 0:
+        return "#161b22"
+    elif count <= 3:
+        return "#0e4429"
+    elif count <= 6:
+        return "#006d32"
+    elif count <= 9:
+        return "#26a641"
+    else:
+        return "#39d353"
+
 
 def render_svg(data):
-    total_contribs = data.get("totalContributions", 0)
-    current_streak = data.get("currentStreak", 0)
-    longest_streak = data.get("longestStreak", 0)
-    weeks = data.get("weeks", [])
+    stats = data.get("stats", {})
+    total_contribs = stats.get("total", data.get("totalContributions", 0))
+    current_streak = stats.get("current_streak", data.get("currentStreak", 0))
+    longest_streak = stats.get("longest_streak", data.get("longestStreak", 0))
+
+    days_list = data.get("days", [])
+    if days_list:
+        # Group flat days into weeks (7 days per column)
+        weeks = [days_list[i : i + 7] for i in range(0, len(days_list), 7)]
+    else:
+        weeks = data.get("weeks", [])
 
     svg_header = """<svg width="860" height="200" viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Consolas, Menlo, monospace">
   <defs>
@@ -39,24 +61,21 @@ def render_svg(data):
     step = 14
     delay = 0.1
 
-    color_map = {
-        "NONE": "#161b22",
-        "FIRST_QUARTILE": "#0e4429",
-        "SECOND_QUARTILE": "#006d32",
-        "THIRD_QUARTILE": "#26a641",
-        "FOURTH_QUARTILE": "#39d353"
-    }
-
     for week_idx, week in enumerate(weeks):
         x = start_x + (week_idx * step)
-        days = week.get("contributionDays", [])
-        for day_idx, day in enumerate(days):
+        if isinstance(week, dict):
+            day_items = week.get("contributionDays", [])
+        else:
+            day_items = week
+
+        for day_idx, day in enumerate(day_items):
             y = start_y + (day_idx * step)
-            color = day.get("color")
-            if not color or color == "#ebedf0" or color == "#9be9a8":
-                level = day.get("contributionLevel", "NONE")
-                color = color_map.get(level, "#161b22")
-            
+            if "color" in day:
+                color = day["color"]
+            else:
+                count = day.get("count", day.get("contributionCount", 0))
+                color = get_color(count)
+
             anim = f'<animate attributeName="opacity" from="0" to="1" begin="{delay:.3f}s" dur="0.25s" fill="freeze"/>'
             rect = f'<rect class="cell" x="{x}" y="{y}" width="{cell_size}" height="{cell_size}" rx="2.5" fill="{color}">{anim}</rect>'
             cells_svg.append(rect)
@@ -80,12 +99,27 @@ def render_svg(data):
 
     return svg_header + svg_body + svg_footer
 
+
+def load_data():
+    root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    json_path = os.path.join(root_dir, "data", "contributions.json")
+
+    if os.path.exists(json_path):
+        with open(json_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+
+    days = fetch_days()
+    return {
+        "days": days,
+        "stats": derive_stats(days),
+    }
+
+
 def main():
     print("[render_heatmap_svg] Fetching contribution data...")
-    data = fetch_contributions()
+    data = load_data()
     svg_content = render_svg(data)
-    
-    # Path to target SVG output
+
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     output_path = os.path.join(root_dir, "contrib-heatmap.svg")
 
@@ -93,6 +127,7 @@ def main():
         f.write(svg_content)
 
     print(f"[render_heatmap_svg] Successfully updated {output_path}")
+
 
 if __name__ == "__main__":
     main()

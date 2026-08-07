@@ -1,191 +1,95 @@
-import os
-import json
-import requests
-from datetime import datetime, timedelta
-
-GRAPHQL_QUERY = """
-query($username: String!) {
-  user(login: $username) {
-    contributionsCollection {
-      contributionCalendar {
-        totalContributions
-        weeks {
-          contributionDays {
-            contributionCount
-            date
-            color
-            contributionLevel
-          }
-        }
-      }
-    }
-  }
-}
 """
+Fetch a GitHub user's public contribution calendar.
 
-def compute_streaks(all_days):
-    """
-    Computes longest streak and current streak from a chronological list of contribution days.
-    Each item in all_days is a dict with 'date' and 'contributionCount'.
-    """
-    if not all_days:
-        return 0, 0
+GitHub serves this as plain HTML at /users/<username>/contributions -
+the same fragment the profile page itself renders. No auth, no token,
+no GraphQL API needed.
+"""
+import json
+import os
+import sys
+from datetime import datetime, timezone
 
-    # Sort days by date
-    sorted_days = sorted(all_days, key=lambda d: d['date'])
-    
-    longest_streak = 0
-    temp_streak = 0
+import requests
+from bs4 import BeautifulSoup
 
-    for day in sorted_days:
-        if day['contributionCount'] > 0:
-            temp_streak += 1
-            if temp_streak > longest_streak:
-                longest_streak = temp_streak
+USERNAME = os.environ.get("GH_USERNAME", "aashbirsingh25")
+URL = f"https://github.com/users/{USERNAME}/contributions"
+OUT_PATH = os.path.join("data", "contributions.json")
+
+
+def fetch_days():
+    resp = requests.get(URL, headers={"User-Agent": "profile-readme-bot"}, timeout=20)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+
+    days = []
+    cells = soup.select("td.ContributionCalendar-day") or soup.select("[data-date]")
+    for cell in cells:
+        date = cell.get("data-date")
+        count = cell.get("data-count") or cell.get("data-level")
+        if date is None:
+            continue
+        try:
+            count = int(count) if count is not None else 0
+        except ValueError:
+            count = 0
+        days.append({"date": date, "count": count})
+
+    days.sort(key=lambda d: d["date"])
+    return days
+
+
+def derive_stats(days):
+    total = sum(d["count"] for d in days)
+    best = max(days, key=lambda d: d["count"], default={"date": None, "count": 0})
+
+    longest = current = 0
+    running = 0
+    for d in days:
+        if d["count"] > 0:
+            running += 1
+            longest = max(longest, running)
         else:
-            temp_streak = 0
-
-    # Current streak calculation: count backwards from latest day
-    current_streak = 0
-    idx = len(sorted_days) - 1
-    
-    # If today has 0 contributions, check yesterday
-    if sorted_days and sorted_days[idx]['contributionCount'] == 0:
-        idx -= 1
-
-    while idx >= 0 and sorted_days[idx]['contributionCount'] > 0:
-        current_streak += 1
-        idx -= 1
-
-    return current_streak, longest_streak
-
-def generate_fallback_data(username="aashbirsingh25"):
-    """
-    Generates fallback contribution data if GitHub API token is unavailable or request fails.
-    """
-    import random
-    today = datetime.now()
-    # Find start date (approx 52 weeks ago, aligned to Sunday)
-    start_date = today - timedelta(days=364)
-    while start_date.weekday() != 6:  # 6 is Sunday in Python datetime (Monday=0 ... Sunday=6)
-        start_date -= timedelta(days=1)
-
-    weeks = []
-    current_date = start_date
-    total_contribs = 0
-    all_days = []
-
-    # Map levels to GitHub standard colors
-    color_map = {
-        0: "#161b22",
-        1: "#0e4429",
-        2: "#006d32",
-        3: "#26a641",
-        4: "#39d353"
-    }
-
-    # Seed random for repeatable data if needed
-    random.seed(42)
-
-    for w in range(53):
-        week_days = []
-        for d in range(7):
-            if current_date > today:
-                break
-            
-            # Generate realistic activity pattern
-            is_weekend = d in (0, 6)
-            prob = 0.3 if is_weekend else 0.75
-            
-            if random.random() < prob:
-                count = random.choice([1, 2, 3, 4, 5, 8, 12])
-            else:
-                count = 0
-
-            total_contribs += count
-            
-            if count == 0:
-                level = 0
-            elif count <= 3:
-                level = 1
-            elif count <= 6:
-                level = 2
-            elif count <= 9:
-                level = 3
-            else:
-                level = 4
-
-            day_obj = {
-                "date": current_date.strftime("%Y-%m-%d"),
-                "contributionCount": count,
-                "color": color_map[level],
-                "contributionLevel": ["NONE", "FIRST_QUARTILE", "SECOND_QUARTILE", "THIRD_QUARTILE", "FOURTH_QUARTILE"][level]
-            }
-            week_days.append(day_obj)
-            all_days.append(day_obj)
-            current_date += timedelta(days=1)
-            
-        if week_days:
-            weeks.append({"contributionDays": week_days})
-
-    current_streak, longest_streak = compute_streaks(all_days)
+            running = 0
+    for d in reversed(days):
+        if d["count"] > 0:
+            current += 1
+        else:
+            break
 
     return {
-        "username": username,
-        "totalContributions": total_contribs,
-        "currentStreak": current_streak,
-        "longestStreak": longest_streak,
-        "weeks": weeks
+        "total": total,
+        "current_streak": current,
+        "longest_streak": longest,
+        "best_day": best,
     }
 
-def fetch_contributions(username="aashbirsingh25", token=None):
-    token = token or os.environ.get("GH_PAT") or os.environ.get("GITHUB_TOKEN")
-    
-    if not token:
-        print("[fetch_contributions] No GH_PAT or GITHUB_TOKEN provided. Using fallback generator / existing data.")
-        return generate_fallback_data(username)
 
-    headers = {
-        "Authorization": f"bearer {token}",
-        "User-Agent": "GitHub-Profile-Art-Fetcher"
-    }
-
-    url = "https://api.github.com/graphql"
-
+def main():
     try:
-        res = requests.post(url, json={"query": GRAPHQL_QUERY, "variables": {"username": username}}, headers=headers, timeout=15)
-        if res.status_code == 200:
-            data = res.json()
-            if "errors" in data:
-                print(f"[fetch_contributions] GraphQL errors: {data['errors']}")
-                return generate_fallback_data(username)
-            
-            calendar = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
-            total_contribs = calendar["totalContributions"]
-            weeks = calendar["weeks"]
+        days = fetch_days()
+    except Exception as exc:
+        print(f"fetch failed: {exc}", file=sys.stderr)
+        sys.exit(1)
 
-            all_days = []
-            for w in weeks:
-                for d in w["contributionDays"]:
-                    all_days.append(d)
+    if not days:
+        print("no contribution cells parsed — GitHub markup may have changed", file=sys.stderr)
+        sys.exit(1)
 
-            current_streak, longest_streak = compute_streaks(all_days)
+    payload = {
+        "username": USERNAME,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "days": days,
+        "stats": derive_stats(days),
+    }
 
-            return {
-                "username": username,
-                "totalContributions": total_contribs,
-                "currentStreak": current_streak,
-                "longestStreak": longest_streak,
-                "weeks": weeks
-            }
-        else:
-            print(f"[fetch_contributions] API returned status code {res.status_code}: {res.text}")
-            return generate_fallback_data(username)
+    os.makedirs("data", exist_ok=True)
+    with open(OUT_PATH, "w") as f:
+        json.dump(payload, f, indent=2)
 
-    except Exception as e:
-        print(f"[fetch_contributions] Exception occurred while fetching: {e}")
-        return generate_fallback_data(username)
+    print(f"wrote {len(days)} days to {OUT_PATH}")
+
 
 if __name__ == "__main__":
-    data = fetch_contributions()
-    print(f"Fetched contribution data for {data['username']}: {data['totalContributions']} total contributions, current streak: {data['currentStreak']}d, longest streak: {data['longestStreak']}d")
+    main()
