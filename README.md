@@ -1,14 +1,12 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=79C0FF&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Aashbir;Full-stack+dev+%2F+AI+agent+builder" alt="typing" />
-
-![Python](https://img.shields.io/badge/Python-000000?style=flat-square&logo=python&logoColor=79C0FF&labelColor=0d1117)
-![FastAPI](https://img.shields.io/badge/FastAPI-000000?style=flat-square&logo=fastapi&logoColor=79C0FF&labelColor=0d1117)
-![React](https://img.shields.io/badge/React-000000?style=flat-square&logo=react&logoColor=79C0FF&labelColor=0d1117)
-
-</div>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=79C0FF&center=true&vCenter=true&width=500&height=50&lines=Hey%2C+I%27m+Aashbir;Full-stack+dev+%2F+AI+agent+builder" alt="Hey, I'm Aashbir" />
 
 <br>
+
+<img src="https://skillicons.dev/icons?i=python,fastapi,react,typescript,docker,git,postgres" alt="Tech Stack" />
+
+</div>
 
 ### About Me
 
@@ -18,21 +16,24 @@
 - 🎵 Off-screen: music, painting, and anything worth chasing
 - ⚡ Currently building: something I'll probably rewrite in 3 months
 
-<br>
-
 ### Projects
 
-| | |
-|---|---|
-| 🤖 **CodeForge AI** — autonomous coding agent | [repo](https://github.com/aashbirsingh25/codeforge-ai) · [demo](https://codeforge-ai-psi.vercel.app) |
-| 🔍 **QuerySphere** — enterprise RAG platform | [repo](https://github.com/aashbirsingh25/querysphere) · [demo](https://querysphere-beta.vercel.app) |
-| 🚚 **RideTrack** — real-time dispatch platform | [repo](https://github.com/aashbirsingh25/ridetrack) · [demo](https://ridetrack-q1ta.vercel.app) |
+```text
+$ ls ~/projects
 
-<br>
+codeforge-ai   — autonomous engineering platform, FastAPI + React + LLM ReAct agents
+querysphere    — enterprise RAG platform, FastAPI + React + FAISS + Gemini
+ridetrack      — real-time delivery tracking, event-driven microservices
+
+$ _
+```
+
+### GitHub Stats
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=aashbirsingh25&hide_border=true&background=00000000&ring=79C0FF&fire=79C0FF&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=79C0FF&sideLabels=8b949e&dates=8b949e" width="55%" />
+<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=aashbirsingh25&show_icons=true&bg_color=0D1117&title_color=79C0FF&text_color=c9d1d9&icon_color=79C0FF&border_color=30363d&hide_border=false" width="48%" alt="Aashbir's GitHub Stats" />
+<img src="https://streak-stats.demolab.com?user=aashbirsingh25&background=0D1117&border=30363d&stroke=79C0FF&ring=79C0FF&fire=79C0FF&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8b949e&currStreakLabel=79C0FF&sideLabels=8b949e&hide_border=false" width="48%" alt="Aashbir's GitHub Streak" />
 
 <br><br>
 
