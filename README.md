@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,50:8B5CF6,100:EC4899&height=200&section=header&text=Aashbir%20Singh&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full%20Stack%20%2B%20AI%2FML%20Engineer%20%C2%B7%20B.E.%20CS%20(AI%2FML)%20%C2%B7%20Class%20of%202026&descAlignY=55&descSize=18&descColor=ffffff" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:0EA5E9,100:10B981&height=200&section=header&text=Aashbir%20Singh&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full%20Stack%20%2B%20AI%2FML%20Engineer%20%C2%B7%20B.E.%20CS%20(AI%2FML)%20%C2%B7%20Class%20of%202026&descAlignY=55&descSize=18&descColor=ffffff" width="100%" />
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-aashbirsingh-EC4899?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aashbirsingh)
-[![GitHub](https://img.shields.io/badge/GitHub-aashbirsingh25-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aashbirsingh25)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-aashbirsingh-0EA5E9?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aashbirsingh)
+[![GitHub](https://img.shields.io/badge/GitHub-aashbirsingh25-10B981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aashbirsingh25)
 
-![Profile Views](https://komarev.com/ghpvc/?username=aashbirsingh25&color=8B5CF6&style=for-the-badge&label=PROFILE+VIEWS)
-![Followers](https://img.shields.io/github/followers/aashbirsingh25?style=for-the-badge&color=EC4899&labelColor=1a1a2e)
+![Profile Views](https://komarev.com/ghpvc/?username=aashbirsingh25&color=0EA5E9&style=for-the-badge&label=PROFILE+VIEWS)
+![Followers](https://img.shields.io/github/followers/aashbirsingh25?style=for-the-badge&color=10B981&labelColor=0F172A)
 
 </div>
 
@@ -30,9 +30,9 @@
 
 <br>
 
-![Gemini](https://img.shields.io/badge/Gemini-8B5CF6?style=for-the-badge&logo=googlegemini&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-4F46E5?style=for-the-badge&logo=openai&logoColor=white)
-![FAISS](https://img.shields.io/badge/FAISS-EC4899?style=for-the-badge)
+![Gemini](https://img.shields.io/badge/Gemini-0EA5E9?style=for-the-badge&logo=googlegemini&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-0F172A?style=for-the-badge&logo=openai&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-10B981?style=for-the-badge)
 
 </div>
 
@@ -78,11 +78,23 @@ Real-time delivery and dispatch tracking system built on **event-driven microser
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=aashbirsingh25&show_icons=true&theme=radical&hide_border=true&bg_color=1a1a2e&title_color=8B5CF6&icon_color=EC4899&text_color=e6e1cf" width="48%" />
-<img src="https://streak-stats.demolab.com?user=aashbirsingh25&hide_border=true&background=1A1A2E&ring=EC4899&fire=8B5CF6&currStreakLabel=8B5CF6&sideLabels=EC4899" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api?username=aashbirsingh25&show_icons=true&theme=react&hide_border=true&bg_color=0F172A&title_color=0EA5E9&icon_color=10B981&text_color=e2e8f0" width="48%" />
+<img src="https://streak-stats.demolab.com?user=aashbirsingh25&hide_border=true&background=0F172A&ring=0EA5E9&fire=10B981&currStreakLabel=0EA5E9&sideLabels=10B981" width="48%" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aashbirsingh25&layout=compact&theme=radical&hide_border=true&bg_color=1a1a2e&title_color=8B5CF6&text_color=e6e1cf" width="45%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aashbirsingh25&layout=compact&theme=react&hide_border=true&bg_color=0F172A&title_color=0EA5E9&text_color=e2e8f0" width="45%" />
 
+<br>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=aashbirsingh25&bg_color=0F172A&color=0EA5E9&line=10B981&point=0EA5E9&area=true&area_color=10B981&hide_border=true" width="90%" />
+
+</div>
+
+<br>
+
+## 🐍 Contribution Snake
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/aashbirsingh25/aashbirsingh25/output/github-contribution-grid-snake-dark.svg" width="90%" alt="contribution snake animation" />
 </div>
 
 <br>
@@ -91,11 +103,11 @@ Real-time delivery and dispatch tracking system built on **event-driven microser
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-8B5CF6?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aashbirsingh)
-[![GitHub](https://img.shields.io/badge/GitHub-EC4899?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aashbirsingh25)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0EA5E9?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aashbirsingh)
+[![GitHub](https://img.shields.io/badge/GitHub-10B981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aashbirsingh25)
 
 *Open to full-time opportunities — let's build something.*
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:EC4899,50:8B5CF6,100:4F46E5&height=100&section=footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:10B981,50:0EA5E9,100:0F172A&height=100&section=footer" width="100%" />
