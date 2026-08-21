@@ -24,7 +24,7 @@
 
 <div align="center">
 
-![Streak stats](https://streak-stats.demolab.com?user=aashbirsingh25&background=0D1117&border=30363D&ring=7C83FD&fire=38BDF8&currStreakLabel=7C83FD&sideLabels=C9D1D9&sideNums=C9D1D9&dates=8B949E)
+![Streak stats](https://streak-stats.demolab.com?user=aashbirsingh25&background=0D1117&border=30363D&ring=7C83FD&fire=38BDF8&currStreakNum=E6EDF3&currStreakLabel=7C83FD&sideNums=E6EDF3&sideLabels=C9D1D9&dates=8B949E)
 
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=aashbirsingh25&bg_color=0D1117&color=7C83FD&line=7C83FD&point=E6EDF3&area=true&area_color=7C83FD&hide_border=true)
 
