@@ -18,7 +18,7 @@
 
 | | | |
 |:---:|:---:|:---:|
-| [![CodeForge AI](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=codeforge-ai&bg_color=0D1117&title_color=7C83FD&text_color=C9D1D9&border_color=30363D&icon_color=38BDF8)](https://github.com/aashbirsingh25/codeforge-ai) | [![QuerySphere](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=querysphere&bg_color=0D1117&title_color=7C83FD&text_color=C9D1D9&border_color=30363D&icon_color=38BDF8)](https://github.com/aashbirsingh25/querysphere) | [![RideTrack](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=ridetrack&bg_color=0D1117&title_color=7C83FD&text_color=C9D1D9&border_color=30363D&icon_color=38BDF8)](https://github.com/aashbirsingh25/ridetrack) |
+| [![CodeForge AI](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=codeforge-ai&bg_color=0D1117&title_color=7C83FD&text_color=C9D1D9&border_color=30363D&icon_color=38BDF8&show_owner=false)](https://github.com/aashbirsingh25/codeforge-ai) | [![QuerySphere](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=querysphere&bg_color=0D1117&title_color=7C83FD&text_color=C9D1D9&border_color=30363D&icon_color=38BDF8&show_owner=false)](https://github.com/aashbirsingh25/querysphere) | [![RideTrack](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=ridetrack&bg_color=0D1117&title_color=7C83FD&text_color=C9D1D9&border_color=30363D&icon_color=38BDF8&show_owner=false)](https://github.com/aashbirsingh25/ridetrack) |
 
 ## GitHub Analytics
 
