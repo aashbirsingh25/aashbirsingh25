@@ -14,17 +14,11 @@
 - 🎵 Off-screen: music, painting, and anything worth chasing
 - ⚡ Currently building: **GetHired** — a web app that finds and applies to jobs for me
 
-<div align="center">
-
-![Skills](https://skillicons.dev/icons?i=python,fastapi,react,ts,docker,git,postgres&theme=dark&perline=7&size=56)
-
-</div>
-
 ## Projects
 
 | | | |
 |:---:|:---:|:---:|
-| ![CodeForge AI](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=codeforge-ai&bg_color=0D1117&title_color=7C83FD&text_color=C9D1D9&border_color=30363D&icon_color=38BDF8) | ![QuerySphere](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=querysphere&bg_color=0D1117&title_color=7C83FD&text_color=C9D1D9&border_color=30363D&icon_color=38BDF8) | ![RideTrack](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=ridetrack&bg_color=0D1117&title_color=7C83FD&text_color=C9D1D9&border_color=30363D&icon_color=38BDF8) |
+| [![CodeForge AI](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=codeforge-ai&bg_color=0D1117&title_color=7C83FD&text_color=C9D1D9&border_color=30363D&icon_color=38BDF8)](https://github.com/aashbirsingh25/codeforge-ai) | [![QuerySphere](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=querysphere&bg_color=0D1117&title_color=7C83FD&text_color=C9D1D9&border_color=30363D&icon_color=38BDF8)](https://github.com/aashbirsingh25/querysphere) | [![RideTrack](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=ridetrack&bg_color=0D1117&title_color=7C83FD&text_color=C9D1D9&border_color=30363D&icon_color=38BDF8)](https://github.com/aashbirsingh25/ridetrack) |
 
 ## GitHub Analytics
 
