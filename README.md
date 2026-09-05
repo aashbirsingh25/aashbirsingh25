@@ -1,10 +1,12 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=0:1E1B4B,50:312E81,100:0D1117&height=200&section=header&text=Aashbir%20Singh&fontSize=50&fontColor=7C83FD&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer&descAlignY=55&descColor=38BDF8)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:FBE1D1,45:D96F4E,100:5D2A1A&height=210&section=header&text=Aashbir%20Singh&fontSize=52&fontColor=FFFAF3&animation=fadeIn&fontAlignY=36&desc=Full-Stack%20Developer&descSize=18&descAlignY=56&descColor=FBE1D1)
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1200&color=7C83FD&background=0D1117&center=true&vCenter=true&width=800&repeat=true&lines=Building+AI+agents+%26+RAG+systems;Full-stack+dev+with+FastAPI+%2B+React;Shipping+over+demoing)
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Source+Serif+4&size=22&pause=1200&color=D96F4E&background=00000000&center=true&vCenter=true&width=800&repeat=true&lines=Building+AI+agents+%26+RAG+systems;Full-stack+dev+with+FastAPI+%2B+React;Shipping+over+demoing)
 
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=E7DFD3&height=2" width="100%">
 
 ## About Me
 
@@ -14,21 +16,27 @@
 - 🎵 Off-screen: music, painting, and anything worth chasing
 - ⚡ Currently building: **GetHired** — a web app that finds and applies to jobs for me
 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=E7DFD3&height=2" width="100%">
+
 ## Projects
 
 | | | |
 |:---:|:---:|:---:|
-| [![CodeForge AI](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=codeforge-ai&bg_color=0D1117&title_color=7C83FD&text_color=C9D1D9&border_color=30363D&icon_color=38BDF8&show_owner=false)](https://github.com/aashbirsingh25/codeforge-ai) | [![QuerySphere](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=querysphere&bg_color=0D1117&title_color=7C83FD&text_color=C9D1D9&border_color=30363D&icon_color=38BDF8&show_owner=false)](https://github.com/aashbirsingh25/querysphere) | [![RideTrack](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=ridetrack&bg_color=0D1117&title_color=7C83FD&text_color=C9D1D9&border_color=30363D&icon_color=38BDF8&show_owner=false)](https://github.com/aashbirsingh25/ridetrack) |
+| [![CodeForge AI](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=codeforge-ai&bg_color=FFFAF3&title_color=5D2A1A&text_color=57534E&border_color=E7DFD3&icon_color=D96F4E&show_owner=false)](https://github.com/aashbirsingh25/codeforge-ai) | [![QuerySphere](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=querysphere&bg_color=FFFAF3&title_color=5D2A1A&text_color=57534E&border_color=E7DFD3&icon_color=D96F4E&show_owner=false)](https://github.com/aashbirsingh25/querysphere) | [![RideTrack](https://github-stats-extended.vercel.app/api/pin/?username=aashbirsingh25&repo=ridetrack&bg_color=FFFAF3&title_color=5D2A1A&text_color=57534E&border_color=E7DFD3&icon_color=D96F4E&show_owner=false)](https://github.com/aashbirsingh25/ridetrack) |
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=E7DFD3&height=2" width="100%">
 
 ## GitHub Analytics
 
 <div align="center">
 
-![Streak stats](https://streak-stats.demolab.com?user=aashbirsingh25&theme=dark&background=0D1117&border=30363D&ring=7C83FD&fire=38BDF8)
+![Streak stats](https://streak-stats.demolab.com?user=aashbirsingh25&background=FFFAF3&border=E7DFD3&ring=D96F4E&fire=16A06D&currStreakNum=D96F4E&sideNums=17191C&currStreakLabel=5D2A1A&sideLabels=5D2A1A&dates=8C8577&stroke=E7DFD3)
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=aashbirsingh25&bg_color=0D1117&color=7C83FD&line=7C83FD&point=E6EDF3&area=true&area_color=7C83FD&hide_border=true)
+![Contribution Chart](https://ghchart.rshah.org/D96F4E/aashbirsingh25)
 
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=E7DFD3&height=2" width="100%">
 
 ## Contribution Snake
 
@@ -38,13 +46,15 @@
 
 </div>
 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=E7DFD3&height=2" width="100%">
+
 ## Connect
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aashbirsingh)
-[![Email](https://img.shields.io/badge/Email-7C83FD?style=for-the-badge&logo=gmail&logoColor=white)](mailto:singhaashbir1234@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-5D2A1A?style=for-the-badge&logo=linkedin&logoColor=FFFAF3)](https://www.linkedin.com/in/aashbirsingh)
+[![Email](https://img.shields.io/badge/Email-D96F4E?style=for-the-badge&logo=gmail&logoColor=FFFAF3)](mailto:singhaashbir1234@gmail.com)
 
 </div>
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:312E81,100:1E1B4B&height=150&section=footer)
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:5D2A1A,55:D96F4E,100:FBE1D1&height=150&section=footer)
