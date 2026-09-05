@@ -1,0 +1,21 @@
+<svg width="285" height="165" viewBox="0 0 285 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="edge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"><animate attributeName="stop-color" values="#38BDF8;#A78BFA;#38BDF8" dur="5s" repeatCount="indefinite"/></stop>
+      <stop offset="100%" stop-color="#A78BFA"><animate attributeName="stop-color" values="#A78BFA;#38BDF8;#A78BFA" dur="5s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="284" height="164" rx="14" fill="#0D1117" stroke="#1F2430"/>
+  <path d="M15 1 H270 A14 14 0 0 1 284 15 V15" stroke="none"/>
+  <rect x="22" y="0" width="0" height="2.5" rx="1.25" fill="url(#edge)">
+    <animate attributeName="width" values="0;241" dur="1.4s" fill="freeze"/>
+  </rect>
+  <text x="24" y="40" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#3D4450">&#128193;</text>
+  <text x="46" y="41" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#58A6FF">codeforge-ai</text>
+  <text x="24" y="68" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" fill="#8B949E">Autonomous software engineering</text>
+  <text x="24" y="87" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" fill="#8B949E">platform built with FastAPI, React,</text>
+  <text x="24" y="106" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" fill="#8B949E">and LLM-powered ReAct agents.</text>
+  <circle cx="30" cy="138" r="5" fill="#3572A5"/>
+  <text x="42" y="142" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8B949E">Python</text>
+  <text x="262" y="143" text-anchor="end" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#38BDF8">&#8599;</text>
+</svg>

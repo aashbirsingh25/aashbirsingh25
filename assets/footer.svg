@@ -1,0 +1,13 @@
+<svg width="880" height="70" viewBox="0 0 880 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7C83FD"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <line x1="80" y1="28" x2="800" y2="28" stroke="url(#fLine)" stroke-width="1.5">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+  </line>
+  <text x="440" y="56" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12" letter-spacing="2" fill="#3D4450">// shipping &gt; demoing</text>
+</svg>
