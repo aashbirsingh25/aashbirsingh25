@@ -2,17 +2,21 @@
 
 ![Header](assets/header.svg)
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=7C83FD&background=00000000&center=true&vCenter=true&width=800&repeat=true&lines=Building+AI+agents+%26+RAG+systems;Full-stack+dev+with+FastAPI+%2B+React;Shipping+over+demoing)
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=7C83FD&background=00000000&center=true&vCenter=true&width=800&repeat=true&lines=const+stack+%3D+%5B'FastAPI'%2C+'React'%2C+'RAG'%5D%3B;while+(true)+%7B+build()%3B+learn()%3B+ship()%3B+%7D;currently%3A+GetHired+%E2%80%94+AI+job+hunter+%F0%9F%9A%80)
 
 </div>
 
 ## About Me
+
+<img align="right" width="310" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" alt="coding"/>
 
 - 🧠 Full-stack dev who ends up building AI agents more often than not
 - 🛠️ Deep in FastAPI, React, and RAG systems right now
 - 📈 Learning system design and cloud infra on the side
 - 🎵 Off-screen: music, painting, and anything worth chasing
 - ⚡ Currently building: **GetHired** — a web app that finds and applies to jobs for me
+
+<br clear="right"/>
 
 ## Tech Stack
 
@@ -61,3 +65,9 @@
 </div>
 
 ![Footer](assets/footer.svg)
+
+<div align="center">
+
+[⬆ back to top](#about-me)
+
+</div>

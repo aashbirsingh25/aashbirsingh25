@@ -1,13 +1,27 @@
-<svg width="880" height="70" viewBox="0 0 880 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="880" height="120" viewBox="0 0 880 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="fLine" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38BDF8" stop-opacity="0"/>
       <stop offset="50%" stop-color="#7C83FD"/>
       <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
     </linearGradient>
+    <linearGradient id="signGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"><animate attributeName="stop-color" values="#38BDF8;#A78BFA;#38BDF8" dur="6s" repeatCount="indefinite"/></stop>
+      <stop offset="100%" stop-color="#A78BFA"><animate attributeName="stop-color" values="#A78BFA;#38BDF8;#A78BFA" dur="6s" repeatCount="indefinite"/></stop>
+    </linearGradient>
   </defs>
-  <line x1="80" y1="28" x2="800" y2="28" stroke="url(#fLine)" stroke-width="1.5">
+
+  <line x1="80" y1="20" x2="800" y2="20" stroke="url(#fLine)" stroke-width="1.5">
     <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
   </line>
-  <text x="440" y="56" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12" letter-spacing="2" fill="#3D4450">// shipping &gt; demoing</text>
+
+  <!-- pulsing dot trio -->
+  <g>
+    <circle cx="416" cy="48" r="3" fill="#38BDF8"><animate attributeName="opacity" values="1;0.2;1" dur="1.8s" begin="0s" repeatCount="indefinite"/></circle>
+    <circle cx="440" cy="48" r="3" fill="#7C83FD"><animate attributeName="opacity" values="1;0.2;1" dur="1.8s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="464" cy="48" r="3" fill="#A78BFA"><animate attributeName="opacity" values="1;0.2;1" dur="1.8s" begin="0.6s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <text x="440" y="84" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" font-weight="600" fill="url(#signGrad)">See you in the next commit ⚡</text>
+  <text x="440" y="108" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="11.5" letter-spacing="2" fill="#3D4450">// shipping &gt; demoing</text>
 </svg>
