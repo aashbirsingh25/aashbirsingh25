@@ -11,20 +11,33 @@
     </linearGradient>
   </defs>
 
-  <line x1="80" y1="16" x2="800" y2="16" stroke="url(#fLine)" stroke-width="1.5">
+  <line x1="80" y1="14" x2="800" y2="14" stroke="url(#fLine)" stroke-width="1.5">
     <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
   </line>
 
-  <!-- terminal goodbye -->
-  <text x="440" y="52" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#3D4450">aashbir@github:~$ <tspan fill="#8B949E">echo</tspan> <tspan fill="#34D399">"thanks for stopping by"</tspan></text>
-
-  <!-- pulsing dot trio -->
+  <!-- git graph: past commits -> the next one, where we meet -->
   <g>
-    <circle cx="416" cy="78" r="3" fill="#38BDF8"><animate attributeName="opacity" values="1;0.2;1" dur="1.8s" begin="0s" repeatCount="indefinite"/></circle>
-    <circle cx="440" cy="78" r="3" fill="#7C83FD"><animate attributeName="opacity" values="1;0.2;1" dur="1.8s" begin="0.3s" repeatCount="indefinite"/></circle>
-    <circle cx="464" cy="78" r="3" fill="#A78BFA"><animate attributeName="opacity" values="1;0.2;1" dur="1.8s" begin="0.6s" repeatCount="indefinite"/></circle>
+    <!-- branch line -->
+    <line x1="330" y1="46" x2="480" y2="46" stroke="#2A3140" stroke-width="2.5"/>
+    <line x1="480" y1="46" x2="544" y2="46" stroke="#3D4450" stroke-width="2.5" stroke-dasharray="5 5">
+      <animate attributeName="stroke-dashoffset" values="10;0" dur="1s" repeatCount="indefinite"/>
+    </line>
+    <!-- merged commits -->
+    <circle cx="336" cy="46" r="6" fill="#0D1117" stroke="#38BDF8" stroke-width="2.5"/>
+    <circle cx="408" cy="46" r="6" fill="#0D1117" stroke="#7C83FD" stroke-width="2.5"/>
+    <circle cx="480" cy="46" r="6" fill="#0D1117" stroke="#A78BFA" stroke-width="2.5"/>
+    <!-- the next commit: pulsing, not yet made -->
+    <circle cx="550" cy="46" r="6" fill="#34D399" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.3;0.9" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="550" cy="46" r="6" fill="none" stroke="#34D399" stroke-width="1.5" opacity="0.6">
+      <animate attributeName="r" values="6;13" dur="1.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <!-- HEAD label drifting toward next commit -->
+    <text x="550" y="26" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="10" letter-spacing="1" fill="#34D399">next</text>
   </g>
 
-  <text x="440" y="114" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="600" fill="url(#signGrad)">See you in the next commit ⚡</text>
-  <text x="440" y="138" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="11.5" letter-spacing="2" fill="#3D4450">// shipping &gt; demoing</text>
+  <text x="440" y="92" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="#8B949E">Thank you for stopping by 🙏</text>
+  <text x="440" y="126" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="url(#signGrad)">See you in the next commit ⚡</text>
 </svg>
