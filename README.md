@@ -8,24 +8,11 @@
 
 ## About Me
 
-<table>
-<tr>
-<td width="60%" valign="middle">
-
 - 🧠 Full-stack dev who ends up building AI agents more often than not
 - 🛠️ Deep in FastAPI, React, and RAG systems right now
 - 📈 Learning system design and cloud infra on the side
 - 🎵 Off-screen: music, painting, and anything worth chasing
 - ⚡ Currently building: **GetHired** — a web app that finds and applies to jobs for me
-
-</td>
-<td width="40%" align="center" valign="middle">
-
-<img src="assets/sikh-dev.svg" width="320" alt="me, coding"/>
-
-</td>
-</tr>
-</table>
 
 ## Tech Stack
 
