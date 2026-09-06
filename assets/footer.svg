@@ -38,6 +38,6 @@
     <text x="550" y="26" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="10" letter-spacing="1" fill="#34D399">next</text>
   </g>
 
-  <text x="440" y="92" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="#8B949E">Thank you for stopping by 🙏</text>
+  <text x="440" y="92" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="#8B949E">Thank you for stopping by</text>
   <text x="440" y="126" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="url(#signGrad)">See you in the next commit ⚡</text>
 </svg>
