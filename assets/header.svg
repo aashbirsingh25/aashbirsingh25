@@ -17,8 +17,8 @@
     <rect width="880" height="42" fill="#1A2029"/>
     <!-- traffic lights -->
     <circle cx="26" cy="21" r="6.5" fill="#FF5F56"/>
-    <circle cx="48" cy="21" r="6.5" fill="#FFBD2E"/>
-    <circle cx="70" cy="21" r="6.5" fill="#27C93F"/>
+    <circle cx="48" cy="21" r="6.5" fill="#27C93F"/>
+    <circle cx="70" cy="21" r="6.5" fill="#8E8E8E"/>
     <!-- window title -->
     <text x="440" y="26" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8E8E8E">aashbir@github: ~</text>
 
