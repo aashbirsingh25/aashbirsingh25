@@ -1,0 +1,133 @@
+<svg width="340" height="300" viewBox="0 0 340 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="turban" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#6D28D9"/>
+    </linearGradient>
+    <linearGradient id="screenGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft2" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <!-- ambient glow behind character -->
+  <ellipse cx="170" cy="150" rx="130" ry="110" fill="#7C3AED" opacity="0.10" filter="url(#soft2)"/>
+
+  <!-- floating symbols -->
+  <g font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-weight="700">
+    <text x="46" y="70" font-size="15" fill="#7C83FD" opacity="0.5">&#123;&#125;
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -7; 0 0" dur="4s" repeatCount="indefinite"/>
+    </text>
+    <text x="272" y="60" font-size="14" fill="#38BDF8" opacity="0.5">&lt;/&gt;
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="5s" repeatCount="indefinite"/>
+    </text>
+    <text x="292" y="140" font-size="15" fill="#A78BFA" opacity="0.45">&#10038;
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="30" y="150" font-size="12" fill="#34D399" opacity="0.45">&#9679;
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="3.6s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- ================= character ================= -->
+
+  <!-- body / hoodie -->
+  <path d="M110 232 C110 196 130 180 170 180 C210 180 230 196 230 232 L230 240 L110 240 Z" fill="#232B3A"/>
+  <path d="M148 184 C155 190 185 190 192 184 L192 196 C185 202 155 202 148 196 Z" fill="#2E3A4F"/>
+  <!-- hoodie strings -->
+  <line x1="160" y1="196" x2="160" y2="212" stroke="#8B949E" stroke-width="2" stroke-linecap="round"/>
+  <line x1="180" y1="196" x2="180" y2="212" stroke="#8B949E" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- arms reaching to laptop -->
+  <path d="M118 226 C118 210 130 206 140 212 L150 222 L138 238 Z" fill="#232B3A"/>
+  <path d="M222 226 C222 210 210 206 200 212 L190 222 L202 238 Z" fill="#232B3A"/>
+
+  <!-- head -->
+  <circle cx="170" cy="128" r="40" fill="#E8B98A"/>
+  <!-- ears -->
+  <circle cx="131" cy="130" r="7" fill="#E8B98A"/>
+  <circle cx="209" cy="130" r="7" fill="#E8B98A"/>
+
+  <!-- beard: solid band around the jaw and chin -->
+  <path d="M130 140 C132 176 150 188 170 188 C190 188 208 176 210 140 L198 142 C196 164 186 172 170 172 C154 172 144 164 142 142 Z" fill="#2B2118"/>
+  <!-- mustache -->
+  <path d="M154 152 C161 147 168 150 170 153 C172 150 179 147 186 152 C182 158 175 158 170 155 C165 158 158 158 154 152 Z" fill="#2B2118"/>
+
+  <!-- smile -->
+  <path d="M163 161 Q170 166 177 161" stroke="#7A4A28" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+
+  <!-- eyes (blinking) -->
+  <g fill="#1B1F27">
+    <ellipse cx="155" cy="134" rx="4.4" ry="5">
+      <animate attributeName="ry" values="5;5;0.6;5;5" keyTimes="0;0.45;0.5;0.55;1" dur="4.2s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="185" cy="134" rx="4.4" ry="5">
+      <animate attributeName="ry" values="5;5;0.6;5;5" keyTimes="0;0.45;0.5;0.55;1" dur="4.2s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+  <!-- blush -->
+  <ellipse cx="146" cy="148" rx="5" ry="3" fill="#D97757" opacity="0.35"/>
+  <ellipse cx="194" cy="148" rx="5" ry="3" fill="#D97757" opacity="0.35"/>
+  <!-- eyebrows -->
+  <path d="M148 122 Q155 118 162 122" stroke="#2B2118" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M178 122 Q185 118 192 122" stroke="#2B2118" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- turban (dastar): joora bump, dome, pleats, fifty band -->
+  <path d="M170 62 C150 62 136 70 130 84 C126 94 127 102 129 108 C142 96 198 96 211 108 C213 102 214 94 210 84 C204 70 190 62 170 62 Z" fill="url(#turban)"/>
+  <!-- joora (topknot bump) -->
+  <ellipse cx="170" cy="60" rx="14" ry="9" fill="#6D28D9"/>
+  <!-- pleat lines -->
+  <path d="M143 74 C156 68 184 68 197 74" stroke="#5B21B6" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M136 86 C154 78 186 78 204 86" stroke="#5B21B6" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- angled larh (front band) -->
+  <path d="M129 108 C142 94 198 94 211 108 C198 102 142 102 129 108 Z" fill="#5B21B6"/>
+  <path d="M129 106 L170 88 L211 106 C196 99 144 99 129 106 Z" fill="#8B5CF6" opacity="0.7"/>
+  <!-- turban pin -->
+  <circle cx="170" cy="78" r="3.4" fill="#38BDF8">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ================= desk & laptop ================= -->
+
+  <!-- desk -->
+  <rect x="42" y="238" width="256" height="11" rx="5.5" fill="#1F2430"/>
+  <rect x="58" y="249" width="9" height="34" rx="3" fill="#171B24"/>
+  <rect x="273" y="249" width="9" height="34" rx="3" fill="#171B24"/>
+
+  <!-- laptop (lid back facing viewer) -->
+  <rect x="128" y="200" width="84" height="40" rx="6" fill="#2A3140"/>
+  <rect x="122" y="236" width="96" height="5" rx="2.5" fill="#3A4356"/>
+  <!-- glowing logo on lid -->
+  <circle cx="170" cy="220" r="6" fill="#38BDF8" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <!-- screen light spilling up on face -->
+  <path d="M132 200 L150 168 L190 168 L208 200 Z" fill="url(#screenGlow)"/>
+
+  <!-- typing hands -->
+  <g>
+    <circle cx="146" cy="234" r="7" fill="#E8B98A">
+      <animate attributeName="cy" values="234;231;234" dur="0.55s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="194" cy="234" r="7" fill="#E8B98A">
+      <animate attributeName="cy" values="234;231;234" dur="0.55s" begin="0.27s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- chai on the desk -->
+  <g>
+    <rect x="248" y="216" width="18" height="22" rx="4" fill="#D96F4E"/>
+    <path d="M266 220 C274 220 274 232 266 232" stroke="#D96F4E" stroke-width="3" fill="none"/>
+    <path d="M253 210 C251 205 255 203 253 198" stroke="#8B949E" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0;0.7" dur="2.8s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="2.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M260 210 C258 205 262 203 260 198" stroke="#8B949E" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0;0.5" dur="3.4s" begin="0.8s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="3.4s" begin="0.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

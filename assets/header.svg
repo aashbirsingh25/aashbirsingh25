@@ -16,17 +16,26 @@
     <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="46"/>
     </filter>
+    <filter id="nameGlow" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M 34 0 L 0 0 0 34" fill="none" stroke="#1C2230" stroke-width="1"/>
+    </pattern>
     <clipPath id="frame"><rect width="880" height="250" rx="16"/></clipPath>
   </defs>
 
   <g clip-path="url(#frame)">
     <rect width="880" height="250" fill="#0A0C10"/>
+    <rect width="880" height="250" fill="url(#grid)" opacity="0.5"/>
+    <!-- vignette so grid fades toward center -->
+    <ellipse cx="440" cy="125" rx="360" ry="150" fill="#0A0C10" opacity="0.72" filter="url(#soft)"/>
 
     <!-- drifting aurora glows -->
-    <ellipse cx="180" cy="250" rx="220" ry="90" fill="#7C3AED" opacity="0.16" filter="url(#soft)">
+    <ellipse cx="180" cy="250" rx="220" ry="90" fill="#7C3AED" opacity="0.18" filter="url(#soft)">
       <animate attributeName="cx" values="180;280;180" dur="14s" repeatCount="indefinite"/>
     </ellipse>
-    <ellipse cx="700" cy="0" rx="240" ry="90" fill="#0EA5E9" opacity="0.13" filter="url(#soft)">
+    <ellipse cx="700" cy="0" rx="240" ry="90" fill="#0EA5E9" opacity="0.15" filter="url(#soft)">
       <animate attributeName="cx" values="700;600;700" dur="16s" repeatCount="indefinite"/>
     </ellipse>
 
@@ -49,7 +58,8 @@
     <text x="118" y="118" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="34" font-weight="700" fill="#7C83FD" opacity="0.35">&lt;<animate attributeName="opacity" values="0.35;0.75;0.35" dur="3.5s" repeatCount="indefinite"/></text>
     <text x="722" y="118" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="34" font-weight="700" fill="#7C83FD" opacity="0.35">/&gt;<animate attributeName="opacity" values="0.35;0.75;0.35" dur="3.5s" repeatCount="indefinite"/></text>
 
-    <!-- name -->
+    <!-- name glow + name -->
+    <text x="440" y="120" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="-1" fill="#7C83FD" opacity="0.55" filter="url(#nameGlow)">Aashbir Singh</text>
     <text x="440" y="120" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="-1" fill="url(#nameGrad)">Aashbir Singh</text>
 
     <!-- role -->
@@ -60,21 +70,25 @@
 
     <!-- open to opportunities pill -->
     <g>
-      <rect x="324" y="182" width="232" height="30" rx="15" fill="#10B98114" stroke="#10B98155"/>
-      <circle cx="346" cy="197" r="4" fill="#34D399">
+      <rect x="324" y="180" width="232" height="30" rx="15" fill="#10B98114" stroke="#10B98155"/>
+      <circle cx="346" cy="195" r="4" fill="#34D399">
         <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="346" cy="197" r="4" fill="none" stroke="#34D399" stroke-width="1.5" opacity="0.6">
+      <circle cx="346" cy="195" r="4" fill="none" stroke="#34D399" stroke-width="1.5" opacity="0.6">
         <animate attributeName="r" values="4;9" dur="1.8s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0.6;0" dur="1.8s" repeatCount="indefinite"/>
       </circle>
-      <text x="362" y="202" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12" letter-spacing="1.5" fill="#34D399">OPEN TO OPPORTUNITIES</text>
+      <text x="362" y="200" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="12" letter-spacing="1.5" fill="#34D399">OPEN TO OPPORTUNITIES</text>
     </g>
 
-    <!-- drawing accent line -->
-    <line x1="290" y1="230" x2="590" y2="230" stroke="url(#lineGrad)" stroke-width="2" stroke-dasharray="300" stroke-dashoffset="300">
-      <animate attributeName="stroke-dashoffset" values="300;0" dur="1.6s" fill="freeze"/>
-    </line>
+    <!-- location -->
+    <text x="440" y="234" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="11.5" letter-spacing="2" fill="#3D4450">&#128205; INDIA &#183; GURUGRAM &#183; BANGALORE &#183; REMOTE</text>
+
+    <!-- corner ticks -->
+    <path d="M28 28 L28 16 L40 16" stroke="#2A3140" stroke-width="2" fill="none"/>
+    <path d="M852 28 L852 16 L840 16" stroke="#2A3140" stroke-width="2" fill="none"/>
+    <path d="M28 222 L28 234 L40 234" stroke="#2A3140" stroke-width="2" fill="none"/>
+    <path d="M852 222 L852 234 L840 234" stroke="#2A3140" stroke-width="2" fill="none"/>
 
     <!-- hairline frame -->
     <rect x="0.5" y="0.5" width="879" height="249" rx="15.5" stroke="#1F2430"/>
